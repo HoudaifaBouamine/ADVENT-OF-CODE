@@ -6,12 +6,11 @@ void Solution(IProblem problem)
     string input = File.ReadAllText($"../../../Solutions/{problem.SolutionFolderName}/{problem.InputFileName}");
     string output = problem.GetSolution(input!);
 
-
     File.WriteAllText($"../../../Solutions/{problem.SolutionFolderName}/{problem.OutputFileName}", output);
     Console.WriteLine(output);
 }
 
-//Solution(new Problem1());
+Solution(new Problem2());
 
 void CreateProblemFolder(string ProblemName)
 {
@@ -20,4 +19,4 @@ void CreateProblemFolder(string ProblemName)
     problemGenerator.Create(ProblemName);
 }
 
-CreateProblemFolder("Problem2");
+//CreateProblemFolder("Problem2");
