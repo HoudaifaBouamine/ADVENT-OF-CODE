@@ -8,7 +8,17 @@ namespace AdventOfCode._2023.Solutions
 {
     public class Problem1 : IProblem
     {
-        public string InputFileName => nameof(Problem1) + ".txt";
+        public Problem1()
+        {
+            InputFileName      = nameof(Problem1) + "Input.txt";
+            OutputFileName     = nameof(Problem1) + "Output.txt";
+            SolutionFolderName = nameof(Problem1);
+        }
+        public string InputFileName { get; }
+
+        public string OutputFileName { get; }
+
+        public string SolutionFolderName { get; }
 
         public string GetSolution(string Input)
         {
@@ -23,7 +33,7 @@ namespace AdventOfCode._2023.Solutions
                 {
                     if (char.IsDigit(line[i]))
                     {
-                        Num2Digits += (int.Parse( line[i].ToString() )) * 10;
+                        Num2Digits += int.Parse(line[i].ToString()) * 10;
                         break;
                     }
                 }
@@ -32,7 +42,7 @@ namespace AdventOfCode._2023.Solutions
                 {
                     if (char.IsDigit(line[i]))
                     {
-                        Num2Digits += (int.Parse(line[i].ToString()));
+                        Num2Digits += int.Parse(line[i].ToString());
                         break;
                     }
                 }

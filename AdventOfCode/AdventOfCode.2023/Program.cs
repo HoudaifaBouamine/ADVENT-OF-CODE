@@ -2,11 +2,11 @@
 
 void Solution(IProblem problem)
 {
-    string input = File.ReadAllText($"../../../Inputs/{problem.GetType()}.txt");
+    string input = File.ReadAllText($"../../../Solutions/{problem.SolutionFolderName}/{problem.InputFileName}");
     string output = problem.GetSolution(input!);
 
-    
-    File.WriteAllText($"../../../Outputs/{problem.GetType()}.txt", output);
+
+    File.WriteAllText($"../../../Solutions/{problem.SolutionFolderName}/{problem.OutputFileName}", output);
     Console.WriteLine(output);
 }
 

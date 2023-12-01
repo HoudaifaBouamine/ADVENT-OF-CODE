@@ -10,5 +10,7 @@ namespace AdventOfCode._2023.Solutions
     {
         string GetSolution(string Input);
         string InputFileName { get; }
+        string OutputFileName { get; }
+        string SolutionFolderName { get; }
     }
 }
