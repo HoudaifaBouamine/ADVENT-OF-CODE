@@ -49,7 +49,7 @@ namespace AdventOfCode._2023.Solutions
             return IdsSum.ToString() ;
         }
 
-        class Game
+        public class Game
         {
             public int Id { get; set; }
 
