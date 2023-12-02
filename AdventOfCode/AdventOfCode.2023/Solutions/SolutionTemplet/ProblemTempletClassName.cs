@@ -22,7 +22,7 @@ namespace AdventOfCode._2023.Solutions
 
         public string GetSolution(string Input)
         {
-            return $"Problem : '{nameof(ProblemTempletClassName)}' is not emplimented yet";
+            return $"Problem : '{nameof(ProblemTempletClassName)}' is not implimented yet";
         }
     }
 }
