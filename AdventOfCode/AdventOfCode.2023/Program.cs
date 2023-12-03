@@ -10,7 +10,7 @@ void Solution(IProblem problem)
     File.WriteAllText($"../../../Solutions/{problem.SolutionFolderName}/{problem.OutputFileName}", output);
 }
 
-Solution(new Problem4());
+Solution(new Problem5());
 
 void CreateProblemFolder(string ProblemName)
 {
@@ -19,6 +19,6 @@ void CreateProblemFolder(string ProblemName)
     problemGenerator.Create(ProblemName);
 }
 
-//CreateProblemFolder("ProblemNULL");
+//CreateProblemFolder("Problem5");
 
 
